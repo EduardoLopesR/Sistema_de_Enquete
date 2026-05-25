@@ -12,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->execute([':nome' => $usuario]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    // password_verify compara a senha digitada com o hash salvo
     if ($user && $senha === $user['senha']) {
         $_SESSION['usuario_id']   = $user['id'];
         $_SESSION['usuario_nome'] = $user['usuario_nome'];
