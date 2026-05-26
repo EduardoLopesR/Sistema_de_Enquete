@@ -1,0 +1,14 @@
+.enquete{
+    text-align: center;
+}
+form{
+    font-size: 20px;
+
+}
+.botao{
+    font-size: 20px;
+}
+.botao:hover{
+    cursor: pointer;
+    background-color: rgb(21, 211, 195);
+}

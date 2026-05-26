@@ -8,6 +8,7 @@ function cadastrarUsuario($conexao) {
 
     if (empty($usuario) || empty($senha)) {
         echo "<p>Preencha todos os campos.</p>";
+        echo "<p><a href='../Páginas/cadastro.html'>Voltar para cadastro</a></p>";
         return;
     }
 
@@ -16,6 +17,7 @@ function cadastrarUsuario($conexao) {
     $stmt->execute([':nome' => $usuario]);
     if ($stmt->fetch()) {
         echo "<p>Usuário já existe.</p>";
+        echo "<p><a href='../Páginas/cadastro.html'>Tente outro nome</a></p>";
         return;
     }
     
