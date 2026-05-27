@@ -9,20 +9,19 @@
 <body>
     <section class="enquete">
         <h3>VOTE!!!</h3>
-        <H1>Você concorda com o porte de armas no Brasil?</H1>
-        <form method="POST" action="enquete.php">
+        <h1>Você concorda com o porte de armas no Brasil?</h1>
+        <form method="GET" action="../Banco/enquete.php">
             <input type="radio" name="voto" value="sim" id="sim">
             <label for="sim">Sim</label>
             <br>
             <input type="radio" name="voto" value="nao" id="nao">
-            <label for="nao">Não</label><br>
-            <br>
+            <label for="nao">Não</label>
+            <br><br>
             <input class="botao" type="submit" value="Votar">
         </form>
     </section>
-    <h1> Resultado da Enquete</h1>
-    <p>Total de votos: </p>
-    <p>SIM</p>
-    <p>NÃO</p>
+
+    <h1>Resultado da Enquete</h1>
+    <a href="../Banco/resultado.php">Ver resultado</a>
 </body>
 </html>
