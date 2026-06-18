@@ -1,9 +1,15 @@
 .enquete{
     text-align: center;
+    width: 100%px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px;  
+    align-items: center;
+    background-color: rgb(148, 214, 208);
 }
 form{
     font-size: 20px;
-
 }
 .botao{
     font-size: 20px;
